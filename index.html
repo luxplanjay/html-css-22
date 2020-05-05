@@ -4,89 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo app</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header>
       <nav>
-        <a href="./index.html">
+        <a href="./index.html" class="logo">
           <img src="./images/logo.svg" alt="Логотип компании" />
           photo
         </a>
 
-        <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Community</a></li>
-          <li><a href="">Support</a></li>
+        <ul class="site-nav list">
+          <li><a href="" class="link current">Features</a></li>
+          <li><a href="" class="link">Pricing</a></li>
+          <li><a href="./community.html" class="link">Community</a></li>
+          <li><a href="" class="link">Support</a></li>
         </ul>
 
-        <ul>
-          <li><a href="">Log in</a></li>
-          <li><a href="">Register</a></li>
+        <ul class="auth-nav list">
+          <li><a href="" class="button primary">Log in</a></li>
+          <li><a href="" class="button secondary">Register</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- Герой -->
-      <section>
-        <h1>The largest community of photo enthusiasts</h1>
-        <a href="">Join today</a>
+      <section class="hero">
+        <h1 class="hero-title">The largest community of photo enthusiasts</h1>
+        <a href="" class="button primary">Join today</a>
       </section>
 
       <!-- Преимущества -->
-      <section>
-        <h2>Snap photos and share like <br />never before</h2>
+      <section class="section">
+        <h2 class="section-title">
+          Snap photos and share like <br />never before
+        </h2>
 
-        <ul>
+        <ul class="feature-list">
           <li>
-            <h3>Sed ut perspiciatis</h3>
+            <h3 class="title">Sed ut perspiciatis</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
               voluptatem sequi nesciunt. Neque porro quisquam est.
             </p>
-            <a href="">Learn more</a>
+            <a href="" class="button secondary">Learn more</a>
           </li>
           <li>
-            <h3>Lorem ipsum dolor</h3>
+            <h3 class="title">Lorem ipsum dolor</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
               voluptatem sequi nesciunt. Neque porro quisquam est.
             </p>
-            <a href="">Learn more</a>
+            <a href="" class="button secondary">Learn more</a>
           </li>
           <li>
-            <h3>Nemo enim ipsam</h3>
+            <h3 class="title">Nemo enim ipsam</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
               voluptatem sequi nesciunt. Neque porro quisquam est.
             </p>
-            <a href="">Learn more</a>
+            <a href="" class="button secondary">Learn more</a>
           </li>
           <li>
-            <h3>Tempor incididunt</h3>
+            <h3 class="title">Tempor incididunt</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
               voluptatem sequi nesciunt. Neque porro quisquam est.
             </p>
-            <a href="">Learn more</a>
+            <a href="" class="button secondary">Learn more</a>
           </li>
         </ul>
       </section>
 
       <!-- Примеры работ -->
-      <section>
-        <h2>Examples</h2>
+      <section class="section">
+        <h2 class="section-title">Examples</h2>
 
-        <ul>
+        <ul class="work-list">
           <li>
             <img src="./images/placeholder.png" alt="Зимний лес" width="750" />
-            <h3>Sed ut perspiciatis unde omnis</h3>
+            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -95,7 +99,7 @@
           </li>
           <li>
             <img src="./images/placeholder.png" alt="Поле" width="750" />
-            <h3>Sed ut perspiciatis unde omnis</h3>
+            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -106,8 +110,8 @@
       </section>
 
       <!-- Клиенты -->
-      <section>
-        <h2>You’re in good company</h2>
+      <section class="section">
+        <h2 class="section-title">You’re in good company</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
@@ -166,8 +170,8 @@
 
         <!-- я не джин 🐷 -->
         <div>
-          <a href="">Join Today</a>
-          <a href="">Contact us</a>
+          <a href="" class="button primary">Join Today</a>
+          <a href="" class="button secondary">Contact us</a>
         </div>
       </section>
     </main>

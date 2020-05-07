@@ -1,12 +1,6 @@
 # html-css-22
 
 - QnA
-- Подключение стилей
-- Селекторы
-- Состояния: ховер и фокус
-- Особенности цвета
-- Наследование, специфичность, каскад
-- Практика
-- Ссылки на другие страницы и
-  [aria-current](https://tink.uk/using-the-aria-current-attribute/)
-- CSS-переменные и селектор :root
+- Разбор страницы "Портфолио"
+- [System Font Stack](https://systemfontstack.com/) и [это](https://devhints.io/css-system-font-stack)
+- Практика: шрифты и оформление текста

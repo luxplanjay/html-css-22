@@ -119,3 +119,15 @@ body {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
+
+/* Footer */
+
+.copyright {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.social > .label {
+  font-size: 15px;
+  line-height: 1.6;
+}

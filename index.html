@@ -17,28 +17,65 @@
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-      <nav class="container">
+      <nav class="container main-nav">
         <a href="./index.html" class="logo">
           <img src="./images/logo.svg" alt="Логотип компании" />
           photo
         </a>
 
         <ul class="site-nav list">
-          <li>
-            <a href="./compendium.html" class="link">Разбор конспекта</a>
-          </li>
-          <li><a href="" class="link current">Features</a></li>
-          <li><a href="" class="link">Pricing</a></li>
-          <li><a href="" class="link">Community</a></li>
-          <li><a href="" class="link">Support</a></li>
+          <li class="item"><a href="" class="link current">Features</a></li>
+          <li class="item"><a href="" class="link">Pricing</a></li>
+          <li class="item"><a href="" class="link">Community</a></li>
+          <li class="item"><a href="" class="link">Support</a></li>
         </ul>
 
         <ul class="auth-nav list">
-          <li><a href="" class="button secondary">Log in</a></li>
-          <li><a href="" class="button primary">Register</a></li>
+          <li class="item"><a href="" class="button secondary">Log in</a></li>
+          <li class="item"><a href="" class="button primary">Register</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- <div class="test-container">
+      <div class="flex-container">
+        <div class="flex-element">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel earum,
+          repellat ipsa voluptatibus blanditiis sequi provident, quis
+          consequuntur labore in vitae vero officia, id eius tenetur quisquam
+          voluptatum repellendus impedit.
+        </div>
+        <div class="flex-element">
+          Nisi nostrum iusto itaque, tempora quia aut rem quibusdam, a repellat
+          eveniet ipsam? Nobis alias explicabo aut culpa illo quis quasi
+          officia, vitae veniam hic iure earum, ea fugit asperiores!
+        </div>
+        <div class="flex-element">
+          Sed provident nostrum praesentium exercitationem nisi labore dolorem,
+          cupiditate repellat pariatur tempora commodi vitae ut nobis vel ex
+          corporis quia ducimus? Iusto, asperiores? Veniam porro neque
+          consequatur quo eius animi.
+        </div>
+        <div class="flex-element">
+          Distinctio maiores consequuntur tenetur, veniam sint commodi quasi
+          ipsa rerum error sapiente officia laudantium perspiciatis, facere iure
+          molestiae minus animi id obcaecati illum. Maxime modi reiciendis
+          deleniti nostrum minima aliquam!
+        </div>
+        <div class="flex-element">
+          Voluptas voluptatibus fugit error sit numquam ratione pariatur, minima
+          facilis cupiditate amet sunt iste eius inventore rerum excepturi esse
+          quidem blanditiis impedit perferendis voluptates fugiat assumenda
+          reprehenderit dolorem nihil? Deleniti.
+        </div>
+        <div class="flex-element">
+          Quibusdam, debitis. Veniam iure, asperiores dolorum ullam mollitia
+          sapiente cum non consequatur saepe vero culpa eligendi laboriosam
+          earum dolorem adipisci quaerat ducimus nostrum dignissimos. Dolores
+          nesciunt nemo quidem magni nostrum!
+        </div>
+      </div>
+    </div> -->
 
     <main>
       <!-- Герой -->
@@ -55,7 +92,7 @@
           </h2>
 
           <ul class="feature-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Sed ut perspiciatis</h3>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -64,7 +101,7 @@
               </p>
               <a href="" class="button secondary">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Lorem ipsum dolor</h3>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -73,7 +110,7 @@
               </p>
               <a href="" class="button secondary">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Nemo enim ipsam</h3>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -82,7 +119,7 @@
               </p>
               <a href="" class="button secondary">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Tempor incididunt</h3>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -107,23 +144,27 @@
                 alt="Зимний лес"
                 width="750"
               />
-              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div class="content">
+                <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem.
+                </p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/placeholder.png" alt="Поле" width="750" />
-              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div class="content">
+                <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -133,12 +174,12 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title centered">You’re in good company</h2>
-          <p class="section-description">
+          <p class="section-description centered">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
           </p>
 
-          <ul class="list">
+          <ul class="client-list list">
             <li>
               <a href=""
                 ><img src="./images/client.svg" alt="Логотип компании"

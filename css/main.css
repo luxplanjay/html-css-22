@@ -22,6 +22,14 @@ body {
   line-height: 1.67;
 }
 
+/* Утиилиты */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -51,11 +59,37 @@ body {
 .page-header {
 }
 
+/* Main nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Site nav */
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+
+.site-nav .item {
+  /* background-color: tomato; */
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
 
 .site-nav .link {
-  color: var(--accent-color);
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
 
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
@@ -71,10 +105,14 @@ body {
   color: var(--title-text-color);
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+/* Auth nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 12px;
 }
 
 /* Hero */
@@ -116,7 +154,8 @@ body {
   line-height: 1.5;
 }
 
-.section-title.centered {
+.section-title.centered,
+.section-description.centered {
   text-align: center;
 }
 
@@ -128,6 +167,17 @@ body {
 }
 
 /* Features и Examples */
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+
+.feature-list .item {
+  width: 625px;
+  margin: 40px 75px;
+}
 
 .feature-list .title,
 .work-list .title {
@@ -143,12 +193,15 @@ body {
 /* Works */
 
 .work-list > .item {
+  display: flex;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--primary-white-color);
 }
 
 .work-list > .item:nth-child(2n) {
+  flex-direction: row-reverse;
   background-color: var(--secondary-bg-color);
 }
 
@@ -157,6 +210,28 @@ body {
   margin-bottom: 32px;
 }
 
+.work-list > .item:nth-child(2n + 1) > .content {
+  margin-left: 84px;
+}
+
+.work-list > .item:nth-child(2n) > .content {
+  margin-right: 84px;
+}
+
+/* Clients */
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-list li {
+  margin: 30px 40px;
+}
 /* Button */
 
 .button {
@@ -199,3 +274,58 @@ body {
   font-size: 15px;
   line-height: 1.6;
 }
+
+.test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+  margin: -15px;
+}
+
+.flex-element {
+  width: 380px;
+  margin: 15px;
+
+  /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
+  /* width: calc((100% - 60px) / 3); */
+  /* margin-right: 30px; */
+  /* margin-bottom: 30px; */
+
+  background-color: tomato;
+
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+
+/* .flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
+/* .flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
+/* Альтернатива */
+/* .flex-element:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+/* .flex-element:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */

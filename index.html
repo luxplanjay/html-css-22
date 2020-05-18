@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox QnA</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <style>
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .logo {
+        font-size: 40px;
+        color: black;
+      }
+
+      .logo.inverse {
+        color: white;
+      }
+
+      .logo-accent {
+        color: orange;
+      }
+
+      .page-footer {
+        background-color: black;
+        padding: 50px;
+      }
+
+      .card {
+        width: 370px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+      }
+
+      .card-content {
+        padding: 20px 24px;
+        background: #ffffff;
+        /* Рамка не везде а только с трёх сторон */
+        border: 1px solid #eeeeee;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo"><span class="logo-accent">Лого</span>тип</div>
+
+    <footer class="page-footer">
+      <div class="logo inverse"><span class="logo-accent">Лого</span>тип</div>
+    </footer>
+
+    <div class="card">
+      <img
+        class="card-image"
+        src="https://images.pexels.com/photos/4312843/pexels-photo-4312843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt=""
+        width="370"
+      />
+      <div class="card-content">
+        <h2>Постер New Orlean vs Golden Star</h2>
+        <p>Дизайн</p>
+      </div>
+    </div>
+  </body>
+</html>

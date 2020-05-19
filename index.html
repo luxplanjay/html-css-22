@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="./styles.css" />
 
     <style>
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
       img {
         display: block;
         max-width: 100%;
         height: auto;
       }
+      /*
+      .box {
+        width: 150px;
+        outline: 3px solid black;
+      } */
 
       .logo {
         font-size: 40px;
@@ -49,6 +65,12 @@
     </style>
   </head>
   <body>
+    <h1 class="visually-hidden">Логический заголовок</h1>
+
+    <div class="box">
+      <img src="./images/img.jpg" alt="" width="270" height="260" />
+    </div>
+
     <div class="logo"><span class="logo-accent">Лого</span>тип</div>
 
     <footer class="page-footer">

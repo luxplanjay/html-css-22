@@ -1,0 +1,182 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2a2a2a;
+  background-color: #fff;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Page header */
+
+.page-header__nav {
+  display: flex;
+  align-items: start;
+}
+
+/* Site nav */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav__item {
+  margin-right: 20px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.site-nav__link--active {
+  color: red;
+}
+
+.site-nav__link:hover {
+  color: orangered;
+}
+
+.site-nav__icon {
+  display: inline-block;
+  padding: 5px;
+  background-color: teal;
+  color: #fff;
+}
+
+/* Logo */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.logo__image {
+  margin-right: 4px;
+}
+
+/* Card set */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.card-set__item {
+  width: 300px;
+  margin: 15px;
+}
+
+/* Product */
+
+.product {
+}
+
+.product__image {
+}
+
+.product__meta {
+}
+
+.product__name {
+}
+
+.product__price {
+}
+
+.product__button {
+}
+
+/* Page footer */
+.page-footer {
+  background-color: #2a2a2a;
+}
+
+.page-footer__logo {
+  color: #fff;
+}
+
+.page-header__logo {
+  margin-right: 50px;
+}
+
+/* Notification */
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  max-width: 400px;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.notification--success {
+  background-color: green;
+}
+
+.notification--warning {
+  background-color: orange;
+}
+
+.notification--error {
+  background-color: red;
+}
+
+.notification__icon {
+  font-size: 40px;
+}
+
+.notification__icon--prepend {
+  margin-right: 30px;
+}
+
+.notification__icon--append {
+  margin-left: 30px;
+}
+
+/* .notification:hover .notification__icon {
+  font-size: 80px;
+} */

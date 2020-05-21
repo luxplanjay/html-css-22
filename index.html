@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM головного мозга</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <a href="" class="logo page-header__logo">
+          <img
+            src="./images/logo.png"
+            alt="Логотип компании Технокряк"
+            class="logo__image"
+          />
+          Технокряк
+        </a>
+
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link site-nav__link--active">
+              <span class="site-nav__icon">Иконка</span>
+              <span class="site-nav__label">О нас</span>
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link"
+              ><span class="site-nav__icon">Иконка</span> Портфолио</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link">
+              <span class="site-nav__icon">Иконка</span>Контакты</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <ul class="card-set">
+      <li class="card-set__item">
+        <article class="product">
+          <img
+            src="https://picsum.photos/300/200"
+            alt=""
+            class="product__image"
+          />
+          <div class="product__meta">
+            <h3 class="product__name">Название продукта</h3>
+            <p class="product__price">193 кредита</p>
+            <button class="product__button">В корзину</button>
+          </div>
+        </article>
+      </li>
+
+      <li class="card-set__item">
+        <article class="product">
+          <img
+            src="https://picsum.photos/300/200"
+            alt=""
+            class="product__image"
+          />
+          <div class="product__meta">
+            <h3 class="product__name">Название продукта</h3>
+            <p class="product__price">193 кредита</p>
+            <button class="product__button">В корзину</button>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <p class="notification notification--success">
+      Пополнение счёта выполнено
+      <span class="notification__icon notification__icon--append">👨‍🚀</span>
+    </p>
+
+    <p class="notification notification--warning">
+      Внимание, будут изменены тарифы
+    </p>
+
+    <p class="notification notification--error">
+      <span class="notification__icon notification__icon--prepend">🚀</span>
+      Ошибка проведения транзакции
+    </p>
+
+    <button class="button">
+      <span class="button__icon">Иконка</span>
+      <span class="button__label">Текст кнопки</span>
+    </button>
+
+    <footer class="page-footer">
+      <a href="" class="logo page-footer__logo">
+        <img
+          src="./images/logo.png"
+          alt="Логотип компании Технокряк"
+          class="logo__image"
+        />
+        <span class="logo__text">Технокряк</span>
+      </a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+/* Overlay */
+
+.overlay {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.2),
+      rgba(0, 255, 0, 0.2)
+    ),
+    url("../images/fish.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

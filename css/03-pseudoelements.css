@@ -1,0 +1,91 @@
+/* BUTTON */
+
+/* ракета */
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: palevioletred;
+}
+
+.button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("../images/rocket-icon.png");
+  background-size: contain;
+}
+
+/* LIST */
+
+.list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+
+.icon-delivery::before {
+  background-image: url("../images/cat.png");
+}
+
+.icon-mobile::before {
+  background-image: url("../images/mobile-icon.svg");
+}
+
+.icon-code::before {
+  background-image: url("../images/code-icon.svg");
+}
+
+.list-item > .title {
+  margin-top: 0;
+}
+
+.list-item > .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../images/cat.png");
+  background-color: red;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.link:hover {
+  background-color: teal;
+}

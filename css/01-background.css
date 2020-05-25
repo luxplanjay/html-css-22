@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 190px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* bgi -> bgr -> bgp -> bgs */
+
+/* cat */
+.box:nth-child(1) {
+  background-color: #2196f3;
+  background-image: url("../images/cat.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: contain; */
+}
+
+/* bird */
+.box:nth-child(2) {
+  background-color: #9c27b0;
+  background-image: url("../images/bird.png");
+  background-repeat: repeat-x;
+  background-size: 32px;
+}
+
+/* dog */
+.box:nth-child(3) {
+  background-color: #009688;
+  background-image: url("../images/dog.png");
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+/* turtle */
+.box:nth-child(4) {
+  background-color: #3f51b5;
+  background-image: url("../images/turtle.png");
+  /* background-repeat: repeat; */
+}

@@ -1,0 +1,12 @@
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.icon:hover .letter {
+  fill: palevioletred;
+}
+
+.icon:hover .background {
+  fill: green;
+}

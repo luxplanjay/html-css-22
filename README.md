@@ -1,7 +1,9 @@
 # html-css-22
 
-- Фотореалестичные изображения JPG или PNG?
-- Фон. Допмат background-origin и background-clip
-- Многослойная картинка c прозрачным градиентом
-- Кнопка с иконкой, список с иконками (псевдоэлементы). [Допмат](https://habr.com/ru/post/154319/)
-- [Кнопка-иконка допмат](https://moderncss.dev/icon-button-css-styling-guide/)
+- SVG как img и background-image
+- Свойство fill
+- Инлайн SVG. Размеры, CSS fill и currentColor.
+- [stroke, width, linecap и dasharray](http://css.yoksel.ru/svg-fill-and-stroke/)
+- SVG-спрайт, символы и идентификатор фрагмента
+- Иконошрифты
+- [Кнопка-иконка](https://moderncss.dev/icon-button-css-styling-guide/)

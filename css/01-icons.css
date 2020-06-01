@@ -1,0 +1,35 @@
+.product {
+  position: relative;
+  width: 370px;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.product-meta {
+  padding: 15px;
+}
+
+.product-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.product-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  outline: 3px solid orange;
+  display: flex;
+}
+
+.product-actions .icon {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара с иконками</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/01-icons.css" />
+  </head>
+  <body>
+    <a href="/index.html">Назад на главную</a>
+
+    <article class="product">
+      <img src="./images/apples.jpg" alt="Яблоки" />
+
+      <!-- div а не ul, чтобы вам было меньше разметки разбирать -->
+      <div class="product-actions">
+        <button aria-label="В избранное" class="item">
+          <svg class="icon"><use href="./images/sprite.svg#star"></use></svg>
+        </button>
+
+        <button aria-label="Написать отзыв" class="item">
+          <svg class="icon"><use href="./images/sprite.svg#edit"></use></svg>
+        </button>
+
+        <button aria-label="В закладки" class="item">
+          <svg class="icon"><use href="./images/sprite.svg#home"></use></svg>
+        </button>
+      </div>
+
+      <div class="product-meta">
+        <h2 class="product-name">Красные яблоки</h2>
+        <p class="product-price">Цена: 100 кредитов</p>
+      </div>
+    </article>
+  </body>
+</html>

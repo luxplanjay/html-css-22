@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Переходы и анимация</title>
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      .scene {
+        perspective: 600px;
+        height: 300px;
+        width: 300px;
+
+        outline: 1px solid black;
+
+        overflow: hidden;
+      }
+
+      .box {
+        height: 100%;
+        background-color: teal;
+        transform: scale(0);
+
+        transition: transform 1000ms linear;
+      }
+
+      .scene:hover .box {
+        transform: scale(1) rotateZ(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="./01-button.html">Простая кнопка</a>
+      </li>
+      <li>
+        <a href="./02-icon-button.html">Кнопка c иконкой</a>
+      </li>
+      <li>
+        <a href="./03-underline.html">Пункт меню с подчёркиванием</a>
+      </li>
+      <li>
+        <a href="./04-card-overlay.html">Карточка с появляющимся оверлеем</a>
+      </li>
+      <li>
+        <a href="./05-modal.html">Анимация модального окна</a>
+      </li>
+      <li>
+        <a href="./06-perspective.html">Флип с перспективой</a>
+      </li>
+    </ul>
+
+    <div class="scene">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

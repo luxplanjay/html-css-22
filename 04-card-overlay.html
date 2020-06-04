@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Карточка с появляющимся оверлеем</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/04-card-overlay.css" />
+  </head>
+  <body>
+    <a href="./index.html">Назад на главную</a>
+
+    <article class="product">
+      <div class="product-thumb">
+        <img src="./images/apples.jpg" alt="Яблоки" />
+
+        <div class="product-overlay">
+          <div class="product-actions">
+            <button aria-label="В избранное" class="item">
+              <svg class="icon">
+                <use href="./images/sprite.svg#star"></use>
+              </svg>
+            </button>
+
+            <button aria-label="Написать отзыв" class="item">
+              <svg class="icon">
+                <use href="./images/sprite.svg#edit"></use>
+              </svg>
+            </button>
+
+            <button aria-label="В закладки" class="item">
+              <svg class="icon">
+                <use href="./images/sprite.svg#home"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-meta">
+        <h2 class="product-name">Красные яблоки</h2>
+        <p class="product-price">Цена: 100 кредитов</p>
+      </div>
+    </article>
+  </body>
+</html>

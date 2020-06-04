@@ -1,0 +1,221 @@
+:root {
+  --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* PERSPECTIVE SINGLE */
+.scene {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #1976d2;
+
+  perspective: 600px;
+}
+
+.box {
+  height: 100%;
+  background-color: #e91e63;
+  background-image: url("../images/smile.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: rotateY(0);
+  transform: rotate3d(0, 1, 0, 0);
+  transition: transform 500ms linear;
+
+  /* animation-name: move;
+  animation-duration: 2000ms;
+  animation-timing-function: linear; */
+  /* animation-delay: 2000ms; */
+  /* animation-fill-mode: both;
+  animation-iteration-count: infinite; */
+}
+
+.box:hover {
+  animation-name: move;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-delay: 2000ms;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.box.animated {
+  animation-name: move;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-delay: 2000ms;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+/* 5000ms */
+@keyframes move {
+  0% {
+    background-color: teal;
+  }
+
+  50% {
+    background-color: palevioletred;
+  }
+
+  100% {
+    background-color: orange;
+  }
+}
+
+.scene:hover .box {
+  transform: rotateY(180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.masthead {
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3f51b5;
+
+  animation-name: zoomIn;
+  animation-duration: 500ms;
+  animation-timing-function: var(--timing-fn);
+  animation-fill-mode: backwards;
+}
+
+.masthead .text-logo {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+
+  animation-name: slideInLeft;
+  animation-duration: 500ms;
+  animation-timing-function: var(--timing-fn);
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.masthead .image-logo {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+
+  animation-name: infiniteSpin;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.nav {
+  display: flex;
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+  animation-timing-function: var(--timing-fn);
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.nav > a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+/* Keyframes zoomIn, slideInLeft, fadeIn*/
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes infiniteSpin {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Многоступенчатая анимация */
+@keyframes testAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+
+  50% {
+    transform: translateX(20%) rotateZ(0);
+  }
+
+  100% {
+    transform: rotate(120deg);
+  }
+}

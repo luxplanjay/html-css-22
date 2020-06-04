@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Анимация модального окна</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/05-modal.css" />
+  </head>
+  <body>
+    <a href="./index.html">Назад на главную</a>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
+      veniam sit accusantium porro dolorum, similique cumque unde atque eaque
+      eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
+      eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
+      consequuntur possimus libero fugit itaque odit ad, officia quisquam.
+      Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
+      corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
+      Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
+      non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
+      corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
+      aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
+      eligendi, temporibus, consequatur excepturi illum natus iusto culpa
+      beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
+      obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
+      repellat provident. Nam ratione nihil rerum quos eaque itaque autem
+      eveniet deserunt, dicta similique consequuntur a consectetur tempora
+      dolorem eius repudiandae iusto temporibus totam omnis!
+    </p>
+
+    <button data-open-modal>Открыть модалку</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
+      veniam sit accusantium porro dolorum, similique cumque unde atque eaque
+      eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
+      eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
+      consequuntur possimus libero fugit itaque odit ad, officia quisquam.
+      Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
+      corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
+      Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
+      non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
+      corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
+      aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
+      eligendi, temporibus, consequatur excepturi illum natus iusto culpa
+      beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
+      obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
+      repellat provident. Nam ratione nihil rerum quos eaque itaque autem
+      eveniet deserunt, dicta similique consequuntur a consectetur tempora
+      dolorem eius repudiandae iusto temporibus totam omnis!
+    </p>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
+          debitis quibusdam doloremque perspiciatis distinctio consequuntur
+          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
+          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
+          iusto eius aut facilis doloribus aliquam quae vitae dolor
+          voluptatibus? Accusamus corrupti cumque odio illo.
+        </p>
+        <button data-close-modal>Закрыть</button>
+      </div>
+    </div>
+
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-open-modal]'),
+        closeModalBtn: document.querySelector('[data-close-modal]'),
+        backdrop: document.querySelector('[data-backdrop]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      refs.backdrop.addEventListener('click', logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle('is-hidden');
+      }
+
+      function logBackdropClick() {
+        console.log('Это клик в бекдроп');
+      }
+    </script>
+  </body>
+</html>

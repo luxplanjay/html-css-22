@@ -1,0 +1,58 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: #008080;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  background-size: contain;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::before {
+  margin-right: 5px;
+
+  background-image: url('../images/bird.svg');
+}
+
+.btn:hover::before,
+.btn:focus::before {
+  transform: translateY(-35px);
+}
+
+.btn::after {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  background-image: url('../images/cat.svg');
+
+  transform: translateY(calc(-50% + 35px));
+}
+
+.btn:hover::after,
+.btn:focus::after {
+  transform: translateY(-50%);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d87093;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Разметка форм</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="form js-speaker-form">
+      <div class="form-field">
+        <label for="name">Имя</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Иван Иваныч"
+          autofocus
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+      </div>
+
+      <div class="form-field">
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+      </div>
+
+      <div role="group" class="group">
+        <h2 class="group-title">Тема доклада</h2>
+
+        <ul class="topic-options">
+          <li>
+            <input type="checkbox" name="topic" value="html" id="html" />
+            <label for="html">HTML</label>
+          </li>
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" />
+            <label for="css">CSS</label>
+          </li>
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">JavaScript</label>
+          </li>
+        </ul>
+      </div>
+
+      <div role="group" class="group">
+        <h2 class="group-title">Уровень вашей экспертизы</h2>
+
+        <ul class="experince-options">
+          <li>
+            <input type="radio" name="experience" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+          </li>
+          <li>
+            <input type="radio" name="experience" value="middle" id="middle" />
+            <label for="middle">Middle</label>
+          </li>
+          <li>
+            <input type="radio" name="experience" value="senior" id="senior" />
+            <label for="senior">Senior</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-field">
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" class="date" />
+      </div>
+
+      <div class="form-field">
+        <label for="pdf">Загрузите копию доклада в pdf</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
+
+      <div class="form-field">
+        <label for="comment">Оставьте коментарий</label>
+        <textarea
+          class="comment"
+          name="comment"
+          id="comment"
+          rows="8"
+          placeholder="Уточните детали доклада"
+        ></textarea>
+      </div>
+
+      <div class="form-field">
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">Соглашаюсь на всё, за еду</label>
+      </div>
+
+      <button type="submit">Оставить заявку</button>
+    </form>
+
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инпут вложенный в метку, избавляемся от id</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/03-nested.css" />
+  </head>
+  <body>
+    <a href="./index.html">Назад на главную</a>
+
+    <form class="form" autocomplete="off">
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Имя</span>
+        <span class="icon"></span>
+      </label>
+
+      <label class="form-field">
+        <input type="email" class="form-input" name="mail" placeholder=" " />
+        <span class="form-label">Почта</span>
+        <span class="icon"></span>
+      </label>
+
+      <button type="submit">Оставить заявку</button>
+    </form>
+  </body>
+</html>

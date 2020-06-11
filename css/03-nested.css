@@ -1,0 +1,52 @@
+.form {
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  padding-left: 40px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
+.form-field:focus-within > .icon {
+  background-color: blue;
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50px);
+}

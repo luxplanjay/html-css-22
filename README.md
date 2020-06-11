@@ -1,7 +1,10 @@
 # html-css-22
 
-- Верстаем произвольную форму с использованием стандартных элементов
-- Пройтись по атрибутам name, value, placeholder, autofocus, [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete), required, checked и т. д.
-- Рассмотреть тег button:submit и почему не input:button
-- Разобрать радио-кнопки и чекбоксы, важность name и value.
-- Подробнее объяснить проблему стилизации fieldset через flexbox и почему используем div[role="group"].
+- Особенности использования плейсхолдера и метки
+- Декоративная метка и иконка, селекторы +, ~ и :focus-within. Плейсхолдер с
+  пустой строкой.
+- Кастомные чекбоксы и радиокнопки:
+  - Как вырезать иконку
+  - Как прятать чек: display vs appearance vs visually-hidden
+  - Оформление через border и background-origin
+- [Кастомные чеки от Макеева](https://youtu.be/E6kLaaQFctU)

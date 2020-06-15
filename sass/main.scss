@@ -1,0 +1,74 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./base/normalize";
+@import "./components/page-header";
+@import "./components/logo";
+
+// .notification-error {
+//   @extend %notification;
+//   background-color: red;
+// }
+
+// .notification-success {
+//   @extend %notification;
+//   background-color: green;
+// }
+
+// .features {
+//   @extend %list;
+// }
+
+// p {
+//   @include bordered();
+// }
+
+// div {
+//   @include bordered($type: dashed);
+// }
+
+// p {
+//   @include centeredFlex();
+// }
+
+// div {
+//   @include centeredFlex();
+// }
+
+// button {
+//   @include centeredFlex(inline-flex);
+// }
+
+// <ul class="features">
+// <li class="icon icon-facebook"></li>
+// <li class="icon icon-github"></li>
+// <li class="icon icon-linkedin"></li>
+// <li class="icon icon-twitter"></li>
+// </ul>
+
+// .icon {
+//   width: 100px;
+//   height: 100px;
+// }
+
+// .icon-facebook {
+//   background-image: url('../images/facebook.svg');
+// }
+
+// .icon-github {
+//   background-image: url('../images/github.svg');
+// }
+
+// .icon-linkedin {
+//   background-image: url('../images/linkedin.svg');
+// }
+
+// .icon-twitter {
+//   background-image: url('../images/twitter.svg');
+// }
+
+$socialIcons: "facebook", "github", "linkedin", "twitter", "instagram";
+$techIcons: "html", "css", "js";
+
+@include generateIcons($socialIcons);
+@include generateIcons($techIcons);

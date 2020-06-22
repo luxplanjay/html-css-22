@@ -1,0 +1,41 @@
+.features-set {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    margin: -10px;
+  }
+}
+
+.features-item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 5px) / 2);
+    margin: 5px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: calc((100% - 6 * 10px) / 3);
+    margin: 10px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+$colors: "#F44336", "#3F51B5", "#4CAF50", "#00BCD4", "#E91E63", "#009688";
+
+@include colorize($colors, ".features-item");

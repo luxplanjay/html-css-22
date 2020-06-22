@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывчивая вёрстка</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="company-logo" href="">Логотип</a>
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./img/sprite.svg#cross"></use>
+              <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            Контент меню
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <button
+class="menu-button"
+aria-expanded="false"
+aria-controls="menu-container"
+data-menu-button
+>
+<svg
+  width="40"
+  height="40"
+  aria-label="Переключатель мобильного меню"
+>
+  <use class="icon-cross" href="./img/sprite.svg#cross"></use>
+  <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+</svg>
+</button> -->
+
+    <main>
+      <section class="section features">
+        <div class="container">
+          <h2 class="section-title">Заголовок первой секции</h2>
+
+          <ul class="features-set">
+            <li class="features-item">1</li>
+            <li class="features-item">2</li>
+            <li class="features-item">3</li>
+            <li class="features-item">4</li>
+            <li class="features-item">5</li>
+            <li class="features-item">6</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section reviews">
+        <div class="container">
+          <h2 class="section-title">Заголовок второй секции</h2>
+
+          <ul class="reviews-set">
+            <li class="reviews-item">1</li>
+            <li class="reviews-item">2</li>
+            <li class="reviews-item">3</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
+
+<!-- <div class="menu-container" id="menu-container" data-menu>
+  Контейнер для меню
+</div> -->

@@ -1,0 +1,14 @@
+.company-logo {
+  @extend %link;
+
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #03a9f4;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: red;
+  }
+}

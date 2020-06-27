@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывчивые изображения</title>
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <p><a href="./index.html">На главную</a></p>
+
+    <picture>
+      <source
+        srcset="
+          ./img/cat-320.webp 320w,
+          ./img/cat-640.webp 640w,
+          ./img/cat-960.webp 960w
+        "
+        type="image/webp"
+      />
+
+      <img
+        srcset="
+          ./img/cat-320.jpg 320w,
+          ./img/cat-640.jpg 640w,
+          ./img/cat-960.jpg 960w
+        "
+        src="./img/cat-320.jpg"
+        alt="Котик"
+        sizes="(min-width: 960px) 25vw, (min-width: 576px) 50vw,  100vw"
+      />
+    </picture>
+  </body>
+</html>

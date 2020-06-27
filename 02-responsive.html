@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывчивые изображения</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/02-responsive.css" />
+  </head>
+  <body>
+    <p><a href="./index.html">На главную</a></p>
+
+    <!-- Дексриптор x -->
+    <!-- <div class="thumb">
+      <img
+        srcset="
+          ./img/cat-320.jpg 1x,
+          ./img/cat-640.jpg 2x,
+          ./img/cat-960.jpg 3x
+        "
+        src="./img/cat-320.jpg"
+        alt="Котик"
+        width="320"
+      />
+    </div> -->
+
+    <!-- Дескритор w и атрибут sizes-->
+    <!-- <div class="thumb">
+      <img
+        srcset="
+          ./img/cat-320.jpg   320w,
+          ./img/cat-640.jpg   640w,
+          ./img/cat-960.jpg   960w,
+          ./img/cat-1280.jpg 1280w
+        "
+        src="./img/cat-320.jpg"
+        alt="Котик"
+        sizes="(min-width: 800px) 33vw, (min-width: 500px) 50vw, 100vw"
+      />
+    </div> -->
+
+    <!-- Отзывчивые изображения -->
+    <div class="container">
+      <ul class="img-set">
+        <li class="img-set__item">
+          <img
+            srcset="
+              ./img/cat-320.jpg   320w,
+              ./img/cat-640.jpg   640w,
+              ./img/cat-960.jpg   960w,
+              ./img/cat-1280.jpg 1280w,
+              ./img/cat-1920.jpg 1920w
+            "
+            src="./img/cat-320.jpg"
+            alt="Котик"
+            sizes="(min-width: 1440) 15vw, (min-width: 960px) 25vw, (min-width: 576px) 50vw, 100vw"
+          />
+        </li>
+        <li class="img-set__item">
+          <img
+            srcset="
+              ./img/cat-320.jpg   320w,
+              ./img/cat-640.jpg   640w,
+              ./img/cat-960.jpg   960w,
+              ./img/cat-1280.jpg 1280w,
+              ./img/cat-1920.jpg 1920w
+            "
+            src="./img/cat-320.jpg"
+            alt="Котик"
+            sizes="(min-width: 1440) 15vw, (min-width: 960px) 25vw, (min-width: 576px) 50vw, 100vw"
+          />
+        </li>
+        <li class="img-set__item">
+          <img
+            srcset="
+              ./img/cat-320.jpg   320w,
+              ./img/cat-640.jpg   640w,
+              ./img/cat-960.jpg   960w,
+              ./img/cat-1280.jpg 1280w,
+              ./img/cat-1920.jpg 1920w
+            "
+            src="./img/cat-320.jpg"
+            alt="Котик"
+            sizes="(min-width: 1440) 15vw, (min-width: 960px) 25vw, (min-width: 576px) 50vw, 100vw"
+          />
+        </li>
+        <li class="img-set__item">
+          <img
+            srcset="
+              ./img/cat-320.jpg   320w,
+              ./img/cat-640.jpg   640w,
+              ./img/cat-960.jpg   960w,
+              ./img/cat-1280.jpg 1280w,
+              ./img/cat-1920.jpg 1920w
+            "
+            src="./img/cat-320.jpg"
+            alt="Котик"
+            sizes="(min-width: 1440) 15vw, (min-width: 960px) 25vw, (min-width: 576px) 50vw, 100vw"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
